@@ -3,8 +3,9 @@
 #define MAX 5
 int stack[MAX];
 int top=-1;
-void push(int ele)
+void push()
 {
+    int ele;
     if(top==MAX-1)
     {
         printf("Stack Overflow Cannot Push");
@@ -12,7 +13,7 @@ void push(int ele)
     }
     else
     {
-        printf("Enter Element To POP");
+        printf("Enter Element To Push \n");
         scanf("%d",&ele);
         top++;
         stack[top]=ele;
@@ -26,7 +27,7 @@ void pop()
     }
     else
     {
-        printf("Element %d is Popped",top);
+        printf("Element %d is Popped \n",top);
         top--;
     }
 }
@@ -39,7 +40,7 @@ void display()
     else
     {
         int i;
-        printf("Stack Elements are: ");
+        printf("Stack Elements are: \n");
         for(i=top;i>=0;i--)
         {
             printf("%d",stack[i]);
@@ -48,17 +49,15 @@ void display()
 }
 int main()
 {
-    int choice,a;
+    int choice;
     while(1) {
-        printf("Enter Your Choice");
-        printf("1. PUSH, 2.POP, 3.Display, 4.Exit");
+        printf("Enter Your Choice \n");
+        printf("1. PUSH, 2.POP, 3.Display, 4.Exit \n");
         scanf("%d",&choice);
         switch(choice)
         {
             case 1:
-                printf("Enter value :");
-                scanf("%d",&a);
-                push(a);
+                push();
                 break;
             case 2:
                 pop();
@@ -75,4 +74,4 @@ int main()
     return 0;
 }
 
-OUTPUT:
+ 
