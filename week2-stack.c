@@ -23,7 +23,7 @@ void pop()
 {
     if(top==-1)
     {
-        printf("Stack Empty");
+        printf("Stack underflow, cannot pop element");
     }
     else
     {
@@ -52,7 +52,7 @@ int main()
     int choice;
     while(1) {
         printf("Enter Your Choice \n");
-        printf("1. PUSH, 2.POP, 3.Display, 4.Exit \n");
+        printf("1. PUSH \n, 2.POP \n, 3.Display \n, 4.Exit \n");
         scanf("%d",&choice);
         switch(choice)
         {
@@ -74,4 +74,96 @@ int main()
     return 0;
 }
 
+OUTPUT:
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+1
+Enter the element to be pushed: 10
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+1
+Enter the element to be pushed: 20
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+1
+Enter the element to be pushed: 30
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+3
+The stack elements are:
+30 20 10 
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+2
+Element 30 is popped
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+3
+The stack elements are:
+20 10 
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+2
+Element 20 is popped
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+3
+The stack elements are:
+10 
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+2
+Element 10 is popped
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+2
+Stack underflow, cannot pop element
+
+Enter your choice:
+1. Push
+2. Pop
+3. Display
+4. Exit
+4
+Exiting the program
  
